@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
+import fetch from 'isomorphic-unfetch'
 import Layout from '../components/layout'
+import './index.scss'
 
 class Index extends Component {
   constructor(props) {
@@ -7,15 +10,43 @@ class Index extends Component {
     this.state = {}
   }
 
+  static propTypes = {}
+
+  // 打印信息, 页面操作时在客户端控制台中查看, 页面刷新时在服务端终端查看。
+  static getInitialProps = async function() {
+    const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
+    const data = await res.json()
+
+    console.log(data)
+
+    return {
+      shows: data
+    }
+  }
+
   render() {
+    const { shows = [] } = this.props
+
     return (
       <Layout>
-        <p>Hello Next.js</p>
+        <h1 className="example">Batman TV Shows</h1>
+        <ul>
+          {
+            shows.map(({show}) => (
+              <li key={show.id}>
+                <Link as={`/p/${show.id}`} href={`/post?id=${show.id}`}>
+                  <a>{show.name}</a>
+                </Link>
+              </li>
+            ))
+          }
+        </ul>
+        <p>
+          <img src="/static/haowan.gif" alt="/" />
+        </p>
       </Layout>
     )
   }
 }
-
-Index.propTypes = {}
 
 export default Index

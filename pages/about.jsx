@@ -7,6 +7,8 @@ class About extends Component {
     this.state = {}
   }
 
+  static propTypes = {}
+
   render() {
     return (
       <Layout>
@@ -15,7 +17,5 @@ class About extends Component {
     )
   }
 }
-
-About.propTypes = {}
 
 export default About

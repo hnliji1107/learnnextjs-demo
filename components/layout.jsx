@@ -13,6 +13,8 @@ class Layout extends Component {
     this.state = {}
   }
 
+  static propTypes = {}
+
   render() {
     return (
       <div style={layoutStyle}>
@@ -22,7 +24,5 @@ class Layout extends Component {
     )
   }
 }
-
-Layout.propTypes = {}
 
 export default Layout

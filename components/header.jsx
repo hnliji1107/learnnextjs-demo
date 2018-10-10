@@ -11,6 +11,8 @@ class Header extends Component {
     this.state = {}
   }
 
+  static propTypes = {}
+
   render() {
     return (
       <div style={{ marginBottom: '20px' }}>
@@ -24,7 +26,5 @@ class Header extends Component {
     )
   }
 }
-
-Header.propTypes = {}
 
 export default Header
