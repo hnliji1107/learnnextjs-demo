@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import Layout from '../components/layout'
-import './index.scss'
 
 class Index extends Component {
   constructor(props) {
