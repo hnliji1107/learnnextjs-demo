@@ -16,7 +16,7 @@ class Post extends Component {
     const res = await fetch(`https://api.tvmaze.com/shows/${id}`)
     const show = await res.json()
 
-    console.log(show)
+    console.log(`Fetched show: ${show}`)
 
     return { show }
   }
