@@ -15,3 +15,7 @@
 
 ## 日志查看
 请到logs目录下查看错误日志和程序中的打印信息。
+
+## 注意
+在此之前，记得启动nginx服务
+`systemctl restart nginx.service`
