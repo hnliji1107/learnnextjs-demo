@@ -1,4 +1,4 @@
-# learnnextjs-demo
+# nextjs-learn
 从官网fork过来的代码，并做了一定的改造。
 
 ## 本地测试

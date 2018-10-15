@@ -1,7 +1,7 @@
 {
-  "name": "learnnextjs-demo",
+  "name": "nextjs-learn",
   "version": "1.0.0",
-  "description": "learnnextjs-demo",
+  "description": "nextjs learn",
   "main": "index.js",
   "scripts": {
     "dev": "npm install && node server.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:hnliji1107/learnnextjs-demo.git"
+    "url": "git@github.com:hnliji1107/nextjs-learn.git"
   },
   "keywords": [
     "nextjs",
