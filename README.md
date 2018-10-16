@@ -16,6 +16,14 @@
 ## 日志查看
 请到logs目录下查看错误日志和程序中的打印信息。
 
-## 注意
-在此之前，记得启动nginx服务
+
+## 其它
+1. 启动nginx服务
 `systemctl restart nginx.service`
+
+2. 下载代码包
+`wget -O nextjs-learn.zip https://github.com/hnliji1107/nextjs-learn/archive/master.zip`
+
+3. 解压
+`unzip nextjs-learn.zip -d nextjs-learn`
+
