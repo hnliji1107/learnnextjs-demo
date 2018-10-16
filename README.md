@@ -17,7 +17,7 @@
 请到logs目录下查看错误日志和程序中的打印信息。
 
 
-## 其它
+## 其它说明
 1. 启动nginx服务
 `systemctl restart nginx.service`
 
@@ -25,5 +25,5 @@
 `wget -O nextjs-learn.zip https://github.com/hnliji1107/nextjs-learn/archive/master.zip`
 
 3. 解压
-`unzip nextjs-learn.zip -d nextjs-learn`
+`unzip nextjs-learn.zip`
 
