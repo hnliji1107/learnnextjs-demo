@@ -1,5 +1,10 @@
 # nextjs-learn
-从官网fork过来的代码，并做了一定的改造。
+Next.js是一个基于React实现的SSR框架（服务端渲染框架，全称：Server Side Rendering），建立在React，Webpack和Babel的基础之上。
+
+目的是为了解决单页面应用的SEO问题，对于一般网站影响不大，但是对于论坛类，内容类网站来说是致命的，搜索引擎无法抓取页面相关内容，也就是用户搜不到此网站的相关信息。
+
+# 原理图
+![img](https://img.alicdn.com/tfs/TB1cFYIi3DqK1RjSZSyXXaxEVXa-800-413.png)
 
 ## 本地测试
 1. clone代码，进入项目根目录
